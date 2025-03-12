@@ -1,0 +1,13 @@
+[
+    {
+        "title": "Tổng Quan",
+        "route": "admin.dashboard",
+        "id": "dashboard"
+    },
+    {
+        "title": "Cấu Hình Section 1",
+        "route": "admin.dashboard",
+        "id": "section-1"
+    }
+
+]
