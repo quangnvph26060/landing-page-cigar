@@ -114,7 +114,7 @@ body {
 }
 
 #section-2 {
-    height: 556px;
+    min-height: 556px;
     background: rgba(139, 120, 120, 1);
     padding: 10px 20px;
 }
@@ -529,8 +529,9 @@ footer span {
         font-size: 25px;
     }
     #section-2 {
-        height: 495px;
+        min-height: 495px; /* Đảm bảo không nhỏ hơn 495px nhưng có thể mở rộng */
     }
+
     #section-3 .s3-info {
         padding: 0 0 0 25px;
     }
