@@ -541,4 +541,8 @@ footer span {
     #section-6 .s6-btn-submit {
         margin-bottom: 10px;
     }
+
+    form .d-flex.justify-content-between.align-content-center {
+        gap: 10px;
+    }
 }
