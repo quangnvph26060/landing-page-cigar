@@ -33,9 +33,14 @@
             <li class="nav-item {{ request()->route('number') == 8 ? 'active' : '' }}">
                 <a href="{{ route('admin.section.config.view', 8) }}">
                     <p>Cấu Hình Chung</p>
+
                 </a>
             </li>
-
+            <li class="nav-item {{ request()->routeIs('admin.contact.index') ? 'active' : '' }}">
+                <a href="{{ route('admin.contact.index') }}">
+                    <p>Danh Dách Yêu Cầu</p>
+                </a>
+            </li>
             <li class="nav-item {{ request()->route('number') == 1 ? 'active' : '' }}">
                 <a href="{{ route('admin.section.config.view', 1) }}">
                     <p>Cấu Hình Section 1</p>

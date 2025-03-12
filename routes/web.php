@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\Backend\AuthController;
+use App\Http\Controllers\Backend\ContactController;
 use App\Http\Controllers\Backend\SectionConfig;
 use App\Mail\NewContactNotification;
 use App\Models\Config;
@@ -36,6 +37,9 @@ Route::prefix('admin')->name('admin.')->group(function () {
 
         Route::get('section/{number}', [SectionConfig::class, 'switchView'])->name('section.config.view');
         Route::post('section/{number}', [SectionConfig::class, 'switchPost'])->name('section.config.post');
+
+        Route::get('contact', [ContactController::class, 'index'])->name('contact.index');
+        Route::post('update-admin-email', [ContactController::class, 'changeEmail'])->name('contact.changeEmail');
     });
 });
 

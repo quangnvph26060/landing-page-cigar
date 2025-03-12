@@ -57,7 +57,7 @@
             <p><strong>📞 Số điện thoại:</strong> {{ $contact->phone }}</p>
 
             <p><strong>🗺️ Địa chỉ:</strong>
-                {{ $contact->address . ', ' . $contact->province->name . ', ' . $contact->district->name . ', ' . $contact->ward->name }}
+                {{ $contact->address . ', ' . $contact->ward->name . ', ' . $contact->district->name . ', ' . $contact->province->name }}
             </p>
 
             @if ($contact->message)
